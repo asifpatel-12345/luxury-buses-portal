@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXEVOYAGE | Premium Luxury Bus Experience</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FontAwesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-bus-simple"></i> LUXE<span>VOYAGE</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#fleet">Our Fleet</a></li>
+      <li><a href="#features">Amenities</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#fleet" class="btn-primary">Book Luxury Ride</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">ULTIMATE HIGH-WAY LUXURY</span>
+      <h1>Redefining Highway Travel With Unmatched Elegance</h1>
+      <p>Experience ultra-luxury sleeper coaches, VIP lounges, multi-axle stability, and world-class in-cabin services.</p>
+      <div class="hero-btns">
+        <a href="#fleet" class="btn-primary">Explore 10 Luxury Buses <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#features" class="btn-secondary">View Amenities</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter & Fleet Section -->
+  <section id="fleet" class="fleet-section">
+    <div class="section-title">
+      <h2>Exclusive Luxury Fleet</h2>
+      <p>Choose from our premium lineup of 10 handcrafted high-tech luxury buses.</p>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All Buses</button>
+      <button class="filter-btn" data-filter="sleeper">Sleeper Coach</button>
+      <button class="filter-btn" data-filter="volvo">Volvo Multi-Axle</button>
+      <button class="filter-btn" data-filter="scania">Scania Metrolink</button>
+    </div>
+
+    <!-- Bus Grid (10 Buses) -->
+    <div class="bus-grid" id="busGrid">
+      <!-- Generated Dynamically via JS -->
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="section-title">
+      <h2>First-Class Amenities</h2>
+      <p>Designed to deliver five-star hotel comfort on wheels.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fa-solid fa-bed"></i>
+        <h3>Full Flat Recline Beds</h3>
+        <p>Memory foam orthopedic mattresses with individual privacy curtains.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-wifi"></i>
+        <h3>High-Speed Starlink Wi-Fi</h3>
+        <p>Seamless 5G internet connection with personal Android entertainment screens.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-temperature-arrow-down"></i>
+        <h3>Climate Control & Air Purifiers</h3>
+        <p>HEPA filtered continuous air circulation with individual temperature controls.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Advanced Safety Suite</h3>
+        <p>ABS, EBS, Lane Assist, Fire Suppression System, and 24/7 Live GPS tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal">
+      <button class="close-modal" id="closeModal">&times;</button>
+      <h2 id="modalBusTitle">Book Luxury Ride</h2>
+      <p id="modalBusSubtitle">Reserve your high-end travel experience</p>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label>Contact Number</label>
+          <input type="tel" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Travel Date</label>
+            <input type="date" required>
+          </div>
+          <div class="form-group">
+            <label>Seats</label>
+            <input type="number" min="1" max="6" value="1" required>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary full-width">Confirm Ticket Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="logo"><i class="fa-solid fa-bus-simple"></i> LUXE<span>VOYAGE</span></div>
+        <p>Providing ultimate comfort, safety, and modern luxury transport across India's premier routes.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#fleet">Our Fleet</a></li>
+          <li><a href="#features">Amenities</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Support</h4>
+        <p><i class="fa-solid fa-phone"></i> +91 1800 900 9000</p>
+        <p><i class="fa-solid fa-envelope"></i> support@luxevoyage.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 LUXEVOYAGE. All rights reserved. Crafted for Premium Travelers.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
